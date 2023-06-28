@@ -36,7 +36,7 @@ The code includes the following main components:
 ├── main proc
     ├── startvideomode macro
 │   └── clockgraphics proc
-│       │  <b>This part determines Time and plot H,M,S Hands based on Time using using sinr maco and PlotLinemacros</b>
+│       │  <b>This part determines Time and plot H,M,S Hands based on Time using using sinr macro and PlotLine macros</b>
 │       ├── PlotLine macro 
 │       │   ├── gettime proc
 │       │   │    └──sinr macro
@@ -66,8 +66,8 @@ To run the clock program, follow these steps:
 
 ## Disclaimer
 
-```
+`
 The clock program is written in assembly language and uses graphic commands that may not be compatible with Windows' protected mode. Running the program in DOSBox provides a suitable environment for executing the assembly code and displaying the clock graphics.
-```
+`
 
 ####                                     Enjoy the clock program!
