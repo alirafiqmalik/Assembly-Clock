@@ -25,18 +25,33 @@ The code includes the following main components:
 - Math macros: `sinr` and `cosr` calculate the sine and cosine values of an angle in degrees.
 - `quadrantloop` macro: Iterates through the four quadrants of a circle to draw markings at specific angles.
 - `drawincrementedmarkings` macro: Draws incremented markings on the clock face.
+- `printchar` macro: It is used to display a character at a specific location on the screen with a specified color.
+- `gettime` proc: This procedure retrieves the current system time.
+- `disptime` proc: Displays the current time (hours, minutes, and seconds) on the Analog Clock.
+- `circlepoints` proc: It calculates and plots the points on a circle using the midpoint algorithm.
 
 
 ## Code Strucutre
 <pre>
-├── mainproc
-│   ├── PlotLine macro
-│   │   ├── PlotLineLow macro
-│   │   └── PlotLineHigh macro
-│   ├── drawcircle macro
-│   ├── plotpixel macro
-│   ├── startvideomode macro
-│   └── printchar macro
+├── main proc
+    ├── startvideomode macro
+│   └── clockgraphics proc
+│       │  `This part determines Time and plot H,M,S Hands based on Time using using sinr maco and PlotLinemacros`
+│       ├── PlotLine macro 
+│       │   ├── gettime proc
+│       │   │    └──sinr macro
+│       │   ├── PlotLineLow macro
+│       │   │   └── plotpixel macro
+│       │   └── PlotLineHigh macro
+│       │       └── plotpixel macro
+│       │   `This part creates the clock body, indicators and Clock Digits`
+│       ├── drawcircle macro
+│           ├── quadrantloop  macro
+│           │    └── circlepoints proc
+│           │        └── plotpixel macro
+│           ├── printchar macro
+│           └── drawincrementedmarkings macro
+│ 
 └── end
 </pre>
 
