@@ -64,6 +64,9 @@ To run the clock program, follow these steps:
 3. Launch DOSBox and navigate to the directory where the clock.exe file is located.
 4. Run the clock.exe file in DOSBox to execute the clock program.
 
+## Sample output
+![Output Screenshot](Sample_Screenshot.png)
+
 ## Disclaimer
 
 `
