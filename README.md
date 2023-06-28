@@ -36,7 +36,7 @@ The code includes the following main components:
 ├── main proc
     ├── startvideomode macro
 │   └── clockgraphics proc
-│       │  `This part determines Time and plot H,M,S Hands based on Time using using sinr maco and PlotLinemacros`
+│       │  <b>This part determines Time and plot H,M,S Hands based on Time using using sinr maco and PlotLinemacros</b>
 │       ├── PlotLine macro 
 │       │   ├── gettime proc
 │       │   │    └──sinr macro
@@ -44,7 +44,7 @@ The code includes the following main components:
 │       │   │   └── plotpixel macro
 │       │   └── PlotLineHigh macro
 │       │       └── plotpixel macro
-│       │   `This part creates the clock body, indicators and Clock Digits`
+│       │   <b>This part creates the clock body, indicators and Clock Digits</b>
 │       └── drawcircle macro
 │           ├── quadrantloop  macro
 │           │    └── circlepoints proc
