@@ -34,9 +34,9 @@ The code includes the following main components:
 ## Code Strucutre
 <pre>
 ├── main proc
-    ├── startvideomode macro
+│   ├── startvideomode macro
 │   └── clockgraphics proc
-│       │  <b>This part determines Time and plot H,M,S Hands based on Time using using sinr macro and PlotLine macros</b>
+│       │  <b>(This part determines Time and plot H,M,S Hands based on Time using using sinr macro and PlotLine macros)</b>
 │       ├── PlotLine macro 
 │       │   ├── gettime proc
 │       │   │    └──sinr macro
@@ -44,14 +44,14 @@ The code includes the following main components:
 │       │   │   └── plotpixel macro
 │       │   └── PlotLineHigh macro
 │       │       └── plotpixel macro
-│       │   <b>This part creates the clock body, indicators and Clock Digits</b>
+│       │   <b>(This part creates the clock body, indicators and Clock Digits)</b>
 │       └── drawcircle macro
 │           ├── quadrantloop  macro
 │           │    └── circlepoints proc
 │           │        └── plotpixel macro
 │           ├── printchar macro
 │           └── drawincrementedmarkings macro
-│ 
+│               └── plotpixel macro
 └── end
 </pre>
 
