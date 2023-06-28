@@ -45,7 +45,7 @@ The code includes the following main components:
 │       │   └── PlotLineHigh macro
 │       │       └── plotpixel macro
 │       │   `This part creates the clock body, indicators and Clock Digits`
-│       ├── drawcircle macro
+│       └── drawcircle macro
 │           ├── quadrantloop  macro
 │           │    └── circlepoints proc
 │           │        └── plotpixel macro
